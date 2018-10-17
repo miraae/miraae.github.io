@@ -3,18 +3,29 @@
     <head>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Raleway');
+            @keyframes intro {
+                0% {
+                    opacity : 0;
+                }
+                100% {
+                    opacity : 1;
+                }
+            }
             body {
                 background-color : black;
+                animation : 4s intro;
             }
             #title {
                 font-weight : normal;
                 color : white;
                 font-family: 'Raleway', sans-serif;
+
                 left : 50%;
-                margin-left : -180px;
+                transform : translateX(-50%);
+                
                 text-decoration : none;
-                top : 55%;
-                font-size :40px;
+                top : 60%;
+                font-size :30px;
                 position : absolute;
                 text-align : center;
             }
@@ -25,7 +36,7 @@
                 position : absolute;
                 left : 50%;
                 margin-left : -100px;
-                top : 55%;
+                top : 60%;
                 margin-top : -220px;
 
                 background-image : url("clip.png");
@@ -36,7 +47,7 @@
         </style>
     </head>
     <body>
-        <a id="title" href="#">My Favorite Movies</a>
-        <a href="#"><div id="clip"></div></a>
+        <a id="title">My Favorite Movies</a>
+        <a href="midproj_main.html"><div id="clip"></div></a>
     </body>
 </html>
